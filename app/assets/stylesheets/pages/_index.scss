@@ -1,2 +1,17 @@
 // Import page-specific CSS files here.
 @import "home";
+
+
+table, th, td {
+   border: 1px solid black;
+}
+
+
+.margin-small {
+  margin: 20px;
+}
+
+.container {
+  width: 80%;
+}
+
