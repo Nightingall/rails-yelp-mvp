@@ -18,4 +18,14 @@
   <%= @restaurant.phone_number %>
 </p>
 
+<ul>
+  <% @restaurant.reviews.each do |review| %>
+  <li> <%= review.content %> </li>
+  <li> <%= review.rating %></li>
+  <% end %>
+</ul>
+
+
 <%= link_to "Back to all resturants", restaurants_path %>
+
+<%= link_to "Make a review", new_restaurant_review_path(@restaurant) %>
